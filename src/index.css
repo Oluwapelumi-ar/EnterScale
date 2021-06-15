@@ -1,0 +1,305 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --mainYellow: #E7CE9C;
+    --lightBlue:#1E315F;
+    --darkBlue: #142452;
+    --boldFont:'Gilroy-Bold', sans-serif;
+    --heavyFont: 'Gilroy-Heavy', sans-serif;
+    --mediumFont: 'Gilroy-Medium', sans-serif;
+    --regularFont: 'Gilroy-Regular', sans-serif;
+    --lightFont: 'Gilroy-Light', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    display: flex;
+    width:100%;
+    align-items: center;
+    height: 12vh;
+    z-index: 100;
+    position: fixed;
+}
+
+.header.active {
+    background-color: var(--darkBlue);
+}
+.menu {
+    width:86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.right-menu ul {
+    list-style-type:none;
+    display: flex;
+    align-items: center;
+}
+.right-menu li {
+    padding-right: 15px;
+}
+.right-menu img {
+    width:100%;
+}
+.right-menu p {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 25px;
+    color:#ffffff;
+    transition: 20s;
+}
+.fa-bars {
+    display: none;
+}
+.dropdown-menu {
+    background-color: var(--darkBlue);
+    opacity: 0.9;
+    position: absolute;
+    top:70px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    width: 40%;
+    height: 80vh;
+    text-align: center;
+    padding-top: 30px;
+    color:var(--primaryColor);
+    list-style-type:none;
+    transition: all 5s ease;
+}
+
+.dropdown-menu a {
+    color:var(--primaryColor)
+}
+
+.fa-times {
+    color:var(--primaryColor);
+    position:absolute;
+    left:1300px;
+    right:0;
+    bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    border:none;
+    padding: 17px 40px;
+    background-color: var(--mainYellow);
+    z-index: 1;
+}
+.btn-outline {
+    background-color:transparent;
+    border:2px solid var(--mainYellow);
+    opacity: 0.6;
+    padding: 20px 78px;
+}
+.btn-overlay {
+    position: relative;
+    right: 259px;
+    bottom:4px;
+    color: #142452;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 23px;
+}
+
+.fa-arrow-right {
+    font-size:12px;
+    color:rgb(7, 7, 7);
+    opacity: 10;
+    display: inline;
+}
+
+/* SubHeading */
+.title {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+
+.title img {
+    margin-bottom: 5px;
+}
+
+.title h4 {
+    color: var(--mainYellow);
+}
+
+.text h4 {
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:var(--primaryColor)
+}
+
+/* Footer */
+
+.footer {
+    height: 50vh;
+    background-color: var(--darkBlue);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-logo p {
+    color: var(--primaryColor);
+}
+
+.enterscale {
+    color:var(--mainYellow)
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 55%;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+}
+
+.services ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.services ul li {
+    padding-bottom: 10px;
+    color:var(--primaryColor)
+}
+
+.services a {
+    color:var(--primaryColor);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    opacity: 0.9;
+}
+
+.social {
+    padding-top: 1rem;
+    text-align: end;
+}
+
+.social a {
+    margin-right: 14px;
+}
+
+
+@media screen and (max-width: 759px){
+    .header {
+        background-color: #142452;
+        box-shadow: 0px 2px 4px rgba(230, 232, 237, 0.4);
+        position: fixed;
+    }
+
+    .right-menu ul {
+        display: none;
+    }
+
+    .fa-bars, .fa-times{
+        cursor: pointer;
+        display: flex;
+        font-size: 32px;
+        color: var(--mainYellow);
+        border: 1px solid var(--mainYellow);
+        padding: 4px;
+    }
+
+    .fa-times {
+        color:var(--mainYellow);
+        position:absolute;
+        left:400px;
+        right:60px;
+        bottom: 20px;
+        font-size: 2rem;
+        padding: 4px;
+    }
+    
+    .dropdown-menu {
+        background-color: #142452 ;
+        opacity: 0.9;
+        position: absolute;
+        top:70px;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 50%;
+        height: 80vh;
+        text-align: center;
+        padding-top: 30px;
+        color:var(--mainYellow)
+    }
+
+    .dropdown-menu li {
+        list-style-type: none;
+        padding-bottom: 25px;
+        font-size: 25px;
+    }
+
+    .btn-overlay {
+        position: relative;
+        right: -29px;
+        bottom:40px;
+        left:10px;
+        top:-62px;
+        color: #142452;
+        font-family: 'Gilroy-Regular', sans-serif;
+        font-size: 23px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        width:70%;
+    }
+    .dropdown-menu {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width :730px) and (min-width : 617px){
+
+    .btn-overlay {
+        position: relative;
+        right: -20px;
+        bottom:40px;
+        left:-240px;
+        top:-3px;
+        color: #142452;
+        font-family: 'Gilroy-Regular', sans-serif;
+        font-size: 23px;
+    }
+    
+}

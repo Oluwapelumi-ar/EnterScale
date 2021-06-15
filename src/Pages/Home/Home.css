@@ -1,0 +1,398 @@
+.container {
+    width:86%;
+    margin:0 auto;
+}
+
+.banner {
+    width: 100%;
+    height:120vh;
+    background-image: url('https://res.cloudinary.com/shuks/image/upload/v1621603179/Rectangle_397_lph68k.jpg');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-text {
+    padding-top: 5rem;
+    color:var(--primaryColor);
+}
+
+.banner-text h1 {
+    font-family: var(--boldFont);
+    font-weight:bolder;
+    font-size: 3.6rem;
+    line-height: 70px;
+    margin-bottom: 2px;
+}
+
+.banner-text p {
+    line-height: 40px;
+    font-size: 28px;
+    margin-bottom: 100px;
+}
+
+section {
+    width: 100%;
+    background-color: var(--lightBlue);
+}
+.second-section {
+    width: 100%;
+    background-color: var(--lightBlue);
+    height:180vh;
+}
+
+.grow {
+    height:20vh;
+    background-color: var(--lightBlue);
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.grow h5 {
+    color: var(--primaryColor);
+    font-size:2rem;
+    line-height: 65px;
+    font-family: var(--regularFont);
+}
+
+.what-we-do-images {
+    width:59%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.what-we-do {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    background-color: var(--lightBlue);
+}
+
+.what-we-do p {
+    margin-top: 5rem;
+    font-size: 1rem;
+    line-height: 40px;
+    color: var(--primaryColor);
+}
+
+.slider-icons {
+    text-align: end;
+    padding:40px
+}
+
+.cards-container {
+    width:86%;
+    overflow-y: auto;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    
+}
+
+.card {
+    background-color:var(--darkBlue) ;
+    min-width: 30%;
+}
+
+.card {
+    max-width: 150%;
+    height:80vh;
+    margin-top: 10px;
+    margin-right: 25px;
+    background-color:var(--darkBlue) ;
+    color:var(--primaryColor);
+    border-bottom: 2px solid #13024e ;
+}
+
+.card-content {
+    width:85%;
+    margin: 0 auto;
+}
+
+.card img:first-child {
+    width:25%;
+    margin: 60px 0 60px 0px;
+}
+
+.card h4 {
+    padding-bottom: 18px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.card p {
+    line-height: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.third {
+    width:100%;
+    background-color: var(--darkBlue)
+}
+
+.third-section {
+    height:100vh;
+    padding-top: 60px;
+    background-color: var(--darkBlue);
+}
+
+.stages {
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+    margin:5rem auto;
+    gap: 20px;
+    color:var(--primaryColor)
+}
+
+.early-stage {
+    flex-basis: 35%;
+}
+
+.growth-stage {
+    flex-basis: 35%;
+    margin-top: 100px;
+    height: 40vh;
+}
+
+.hyper-growth {
+    flex-basis: 35%;
+}
+
+.stage-title {
+    width:80%;
+    height: 10vh;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.early {
+    background-image: url('https://res.cloudinary.com/shuks/image/upload/v1623614761/01_vm74n6.png');
+}
+
+.growth {
+    background-image: url('https://res.cloudinary.com/shuks/image/upload/v1623614791/02_zka18g.png');
+}
+
+.hyper {
+    background-image: url('https://res.cloudinary.com/shuks/image/upload/v1623614801/03_w9ins6.png');
+}
+
+.stages h4 {
+    font-family: Gilroy;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.stages p {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.fourth {
+    background-color: var(--lightBlue);
+    width: 100%;
+    min-height: 200vh;
+}
+
+.fourth-section {
+    
+    padding-top: 30px;
+}
+
+Form {
+    width:100%;
+    margin:0 auto;
+    color:var(--primaryColor);
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+input {
+    width:100%;
+    height: 7vh;
+    margin:0 auto;
+    border: 1px solid #FFFFFF;
+    background-color:rgba(255, 255, 255, 0.1);
+    color:var(--primaryColor)
+}
+
+::placeholder{
+    color: var(--primaryColor);
+    opacity: 0.5;
+    padding-left: 23px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline:2px solid #A5BCFF;
+}
+
+.flex {
+    display: flex;
+    width:80%;
+    justify-content: space-between;
+}
+
+.short {
+    width:160%;
+}
+
+.form-text {
+    display: flex;
+    align-items: center;
+}
+
+.form-text p {
+    margin-right: 12px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contact {
+    margin-top: 7rem;
+    justify-content: space-around;
+    background-image: url('https://res.cloudinary.com/shuks/image/upload/v1623625887/countries-dark_opgix9.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact-text {
+    width:30%;
+    color:var(--primaryColor);
+}
+
+.contact-text p {
+    margin-top: 25px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 759px) {
+    .banner {
+        background-image: none;
+        background-color: var(--darkBlue) ;
+        height: fit-content;
+    }
+
+    .banner-text {
+        padding-top: 12rem;
+    }
+
+    .banner-text h1 {
+        font-size: 2.2rem;
+        line-height: 60px;
+    }
+
+    .banner-text p {
+        line-height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .grow {
+        margin-bottom: 1px;
+    }
+
+    .grow h5 {
+        font-size: 1.3rem;
+        line-height: 45px;
+    }
+
+    .what-we-do-images {
+        width:70%;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between ;
+    }
+
+    .what-we-do-images img{
+        width:20%;
+    }
+
+    .what-we-do {
+        flex-direction: column;
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .second-section {
+        min-height: 210vh;
+    }
+
+    .slider-icons {
+        margin-top: 50px;
+    }
+
+    .card {
+        min-height: 70vh;
+        min-width: 80%;
+    }
+    .third-section {
+        min-height: 150vh;
+    }
+
+    .stages {
+        flex-direction: column;
+        
+    }
+
+    .growth-stage {
+        margin: 0;
+    }
+
+    .flex {
+        flex-direction: column;
+        width:50%;
+    }
+
+    .form-text {
+        display: none;
+    }
+
+    .contact-text{
+        width:80%;
+        margin:0 auto;
+    }
+}

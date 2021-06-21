@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import Button from "../../Components/Button";
 import Cards from '../../Components/Cards';
 import Header from "../../Components/Header";
@@ -10,12 +9,6 @@ import './Home.css'
 
 const Home = () => {
 
-    const [slider, setslider] = useState(0)
-
-    const handleClick = () => {
-        setslider(slider)
-        console.log('working')
-    }
     return ( 
         <div className='home'>
             <div className="banner">

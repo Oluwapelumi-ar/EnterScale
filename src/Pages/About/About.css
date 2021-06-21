@@ -1,3 +1,7 @@
 .about {
-    background-color: red;
+    background-color: var(--darkBlue);
+}
+
+.about-banner {
+    height:120vh;
 }
